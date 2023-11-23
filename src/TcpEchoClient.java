@@ -15,7 +15,7 @@ public class TcpEchoClient
         ) {
             System.out.println("Connected to " + HOSTNAME + " on port " + PORT);
 
-            String data = "Hello\nBye";
+            String data = "Yash\nBye";
 
             System.out.println("Sending to server:\n" + data);
             out.println(data);
