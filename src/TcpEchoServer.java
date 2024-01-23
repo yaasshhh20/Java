@@ -1,8 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class TcpEchoServer
-{
+public class TcpEchoServer {
     private final static int PORT = 8080;
 
     public static void main(String[] args) throws IOException
@@ -21,7 +20,7 @@ public class TcpEchoServer
 
                 String line;
                 while ((line = in.readLine()) != null) {
-                    System.out.println("Server received: " + line + ". Sending to client");
+                    System.out.println("Server received: " + line);
                     out.println(line);
 
                     if (line.equals("Bye")) {
